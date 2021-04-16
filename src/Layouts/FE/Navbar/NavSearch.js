@@ -25,6 +25,7 @@ const NavSearch = () => {
               </div>
               <InputBase
                 placeholder="Search…"
+                fullWidth
                 classes={{
                   root: classes.inputRoot,
                   input: classes.inputInput,
