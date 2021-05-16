@@ -4,6 +4,8 @@ import Banner from "../Layouts/FE/Banner/Banner";
 import Offer from "../Layouts/FE/Offer/Offer";
 import PopularCategories from "../Layouts/FE/Explore/PopularCategories";
 import Searches from "../Layouts/FE/Trending/Searches";
+import DailyDiscover from "../Layouts/FE/Discover/DailyDiscover";
+import Footer from "../Layouts/FE/Footer/Footer";
 
 const Home = () => {
   return (
@@ -30,8 +32,10 @@ const Home = () => {
       {/* Featured Brands */}
 
       {/* Discover */}
+      <DailyDiscover />
 
       {/*Footer*/}
+      <Footer />
     </Fragment>
   );
 };

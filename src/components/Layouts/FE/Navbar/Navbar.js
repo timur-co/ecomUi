@@ -6,7 +6,7 @@ import Categories from "./Categories";
 const Navbar = () => {
   return (
     <div className="nav-wrapper">
-      {/*information*/}
+      {/*Site/User information*/}
       <NavInfo />
 
       {/*Search pannel*/}
