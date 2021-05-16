@@ -1,5 +1,7 @@
 import React from "react";
-import { Container, Grid } from "@material-ui/core";
+import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
 const Categories = () => {
@@ -10,27 +12,39 @@ const Categories = () => {
       <Container component="div">
         <Grid container spacing={3}>
           <Grid item xs={2}>
-            <div>Logo</div>
+            <Link to="/" className="alink">
+              Logo
+            </Link>
           </Grid>
 
           <Grid item xs={2}>
-            <div>Logo</div>
+            <Link to="/" className="alink">
+              Logo
+            </Link>
           </Grid>
 
           <Grid item xs={2}>
-            <div>Logo</div>
+            <Link to="/" className="alink">
+              Logo
+            </Link>
           </Grid>
 
           <Grid item xs={2}>
-            <div>Logo</div>
+            <Link to="/" className="alink">
+              Logo
+            </Link>
           </Grid>
 
           <Grid item xs={2}>
-            <div>Logo</div>
+            <Link to="/" className="alink">
+              Logo
+            </Link>
           </Grid>
 
           <Grid item xs={2}>
-            <div>Logo</div>
+            <Link to="/" className="alink">
+              Logo
+            </Link>
           </Grid>
         </Grid>
       </Container>

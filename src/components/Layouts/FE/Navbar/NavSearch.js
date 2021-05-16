@@ -1,9 +1,11 @@
 import React from "react";
 import { Container, Grid } from "@material-ui/core";
 import { fade, makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import InputBase from "@material-ui/core/InputBase";
 import SearchIcon from "@material-ui/icons/Search";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 const NavSearch = () => {
   const classes = useStyles();
@@ -14,11 +16,15 @@ const NavSearch = () => {
         <Grid container spacing={3}>
           {/*Logo*/}
           <Grid item xs={2}>
-            <div>Logo</div>
+            <div>
+              <Link to="/" className="alink">
+                Logo
+              </Link>
+            </div>
           </Grid>
 
           {/*Search*/}
-          <Grid item xs={6}>
+          <Grid item xs={8}>
             <div className={classes.search}>
               <div className={classes.searchIcon}>
                 <SearchIcon />
@@ -36,14 +42,18 @@ const NavSearch = () => {
           </Grid>
 
           {/*Cart*/}
-          <Grid item xs={2}>
-            <div>Cart</div>
+          <Grid item xs={2} style={{ display: "flex" }}>
+            <div className="ml-3">
+              <Link to="/" className="alink">
+                <ShoppingCartIcon />
+              </Link>
+            </div>
           </Grid>
 
           {/*User*/}
-          <Grid item xs={2}>
+          {/* <Grid item xs={2}>
             <div>User</div>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </AppBar>
