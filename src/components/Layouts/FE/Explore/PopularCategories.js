@@ -1,5 +1,7 @@
 import React from "react";
-import { Container, Typography, Avatar, Grid } from "@material-ui/core";
+import Container from "@material-ui/core/Container";
+import Typography from "@material-ui/core/Typography";
+import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
 
 const PopularCategories = () => {

@@ -14,11 +14,11 @@ const App = () => {
     <Router>
       <Switch>
         <Route path="/login" render={() => <div>Login</div>}></Route>
-        <Route path="/" component={Home} />
-
+        <Route path="/Register" render={() => <div>Register</div>}></Route>
         {/*private Route*/}
         <Route path="/dashboard" render={() => <div>dashboard</div>}></Route>
 
+        <Route path="/" component={Home} />
         <Redirect to="/" />
       </Switch>
     </Router>
