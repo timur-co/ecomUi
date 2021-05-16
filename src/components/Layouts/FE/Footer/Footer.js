@@ -10,17 +10,17 @@ const Footer = () => {
     <div className={classes.footer}>
       <Container>
         <Grid container className="pt-5">
-          <Grid item xs={3}>
+          <Grid item xs={4}>
             <Typography gutterBottom>Customer Service</Typography>
             <li style={{ listStyle: "none" }}>How to buy</li>
             <li style={{ listStyle: "none" }}>Shipping and Delivery</li>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={4}>
             <Typography gutterBottom>About</Typography>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={4}>
             <Typography gutterBottom>Payment Option</Typography>
           </Grid>
         </Grid>

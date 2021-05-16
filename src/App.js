@@ -15,6 +15,7 @@ const App = () => {
       <Switch>
         <Route path="/login" render={() => <div>Login</div>}></Route>
         <Route path="/Register" render={() => <div>Register</div>}></Route>
+
         {/*private Route*/}
         <Route path="/dashboard" render={() => <div>dashboard</div>}></Route>
 

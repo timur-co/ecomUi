@@ -10,7 +10,7 @@ import Button from "@material-ui/core/Button";
 const DailyDiscover = () => {
   const dailyDiscover = () => {
     return (
-      <Grid item xs={2}>
+      <Grid item lg={2} xs={4}>
         <Card>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>

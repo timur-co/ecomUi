@@ -1,5 +1,7 @@
 import React from "react";
-import { Container, Typography } from "@material-ui/core";
+import Container from "@material-ui/core/Container";
+import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 
 const NavInfo = () => {
@@ -8,17 +10,38 @@ const NavInfo = () => {
     // user details
     <div className={classes.navInfo}>
       <Container component="div">
-        <Typography variant="body1" className="mr-4" display="inline">
-          body1
-        </Typography>
+        <Grid container>
+          {/* Info sectio */}
+          <Grid item lg={8}></Grid>
 
-        <Typography variant="body1" className="mr-4" display="inline">
-          body1
-        </Typography>
-
-        <Typography variant="body1" className="mr-4" display="inline">
-          body1
-        </Typography>
+          {/* User section */}
+          <Grid item lg={4}>
+            <Typography
+              variant="body1"
+              className="ml-4"
+              display="inline"
+              style={{ float: "right" }}
+            >
+              body1asdasd
+            </Typography>
+            <Typography
+              variant="body1"
+              className="ml-4"
+              display="inline"
+              style={{ float: "right" }}
+            >
+              body2ds
+            </Typography>
+            <Typography
+              variant="body1"
+              className="ml-4"
+              display="inline"
+              style={{ float: "right" }}
+            >
+              body3
+            </Typography>
+          </Grid>
+        </Grid>
       </Container>
     </div>
   );
